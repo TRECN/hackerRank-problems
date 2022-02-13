@@ -100,13 +100,15 @@ vector<string> split(const string &);
 
 int diagonalDifference(vector<vector<int>> arr) {
     int n=arr[0].size();
-    int sum1,sum2,diff;
+    int sum1=0,sum2=0,diff;
     for(int i=0;i<n;i++){
         sum1+=arr[i][i];
     }
     for(int i=0,j=n-1;i<n;i++,j--){
-        sum2=
+        sum2+=arr[i][j];
     }
+    diff=abs(sum1-sum2);
+    return n;
 }
 
 int main()
