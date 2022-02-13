@@ -61,7 +61,7 @@ void plusMinus(vector<int> arr) {
         else
             count0++;
     }
-    double p=countp/n,ne=countn/n,ze=count0/n;
+    double p=(double)countp/n,ne=(double)countn/n,ze=(double)count0/n;
     cout<<p<<endl;
     cout<<ne<<endl;
     cout<<ze;
