@@ -102,7 +102,10 @@ int diagonalDifference(vector<vector<int>> arr) {
     int n=arr[0].size();
     int sum1,sum2,diff;
     for(int i=0;i<n;i++){
-        
+        sum1+=arr[i][i];
+    }
+    for(int i=0,j=n-1;i<n;i++,j--){
+        sum2=
     }
 }
 
