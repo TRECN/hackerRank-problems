@@ -24,6 +24,7 @@ string timeConversion(string s) {
     string time=h+s.substr(2,6);
     return time;
 }
+
 int main()
 {
     ofstream fout(getenv("OUTPUT_PATH"));
