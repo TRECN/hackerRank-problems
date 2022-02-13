@@ -43,10 +43,10 @@ vector<string> split(const string &);
  */
 
 void miniMaxSum(vector<int> arr) {
-    long long min=100000001,max=0,sum=0;
+    long long int min=10000000001,max=0,sum=0;
     for(int i=0;i<arr.size();i++){
         for(int j=0;j<arr.size();j++){
-            if(arr[j]!=arr[i]){
+            if(j!=i){
                 sum+=arr[j];
             }
         }
