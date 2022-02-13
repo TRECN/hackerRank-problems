@@ -53,14 +53,20 @@ vector<string> split(const string &);
 void plusMinus(vector<int> arr) {
     int n=arr.size();
     int countp=0,countn=0,count0=0;
-    for(int i=0;i<n;i++)[
+    for(int i=0;i<n;i++){
         if(arr[i]>0)
             countp++;
         else if(arr[i]<0)
             countn++;
         else
             count0++;
-    ]
+    }
+    double p=countp/n,ne=countn/n,ze=count0/n;
+    cout<<p<<endl;
+    cout<<ne<<endl;
+    cout<<ze;
+
+
 }
 
 int main()
