@@ -1,4 +1,10 @@
-4
+// Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+
+// Example
+
+// The minimum sum is  and the maximum sum is . The function prints
+
+// 16 24
 // Function Description
 
 // Complete the miniMaxSum function in the editor below.
@@ -78,23 +84,23 @@ int main()
 
 string ltrim(const string &str) {
     string s(str);
- 
+
     s.erase(
         s.begin(),
         find_if(s.begin(), s.end(), not1(ptr_fun<int, int>(isspace)))
     );
- 
+
     return s;
 }
- 
+
 string rtrim(const string &str) {
     string s(str);
- 
+
     s.erase(
         find_if(s.rbegin(), s.rend(), not1(ptr_fun<int, int>(isspace))).base(),
         s.end()
     );
- 
+
     return s;
 }
 
