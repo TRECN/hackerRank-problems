@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 string timeConversion(string s) {
     string h,noon;
     h=s.substr(0,2);
