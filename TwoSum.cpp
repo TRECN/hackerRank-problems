@@ -7,7 +7,7 @@ public:
                 if(nums[i]+nums[j]==target){
                     count.push_back(i);
                     count.push_back(j);
-                    return count;
+                    return
                 }
             }
         }
