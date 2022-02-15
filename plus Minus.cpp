@@ -30,7 +30,29 @@
 
 // Output Format
 
-countn=0,count0=0;
+// Print the following  lines, each to  decimals:
+
+// proportion of positive values
+// proportion of negative values
+// proportion of zeros
+
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+vector<string> split(const string &);
+
+/*
+ * Complete the 'plusMinus' function below.
+ *
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+
+void plusMinus(vector<int> arr) {
+    int n=arr.size();
+    int countp=0,countn=0,count0=0;
     for(int i=0;i<n;i++){
         if(arr[i]>0)
             countp++;
