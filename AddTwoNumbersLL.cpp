@@ -93,8 +93,9 @@ public:
         ListNode* b=l2;
         ListNode* result=NULL;
         ListNode* temp=result;
-        int carry=0,sum=0;
+        int carry=0;
         while(a!=NULL||b!=NULL){
+            int sum=0;
             if(a!=NULL)
                 sum+=a->val;
             if(b!=NULL)
@@ -108,7 +109,7 @@ public:
             else
                 carry=0;
 
-            if(result==NULL){
+            if(!result){
                 result= new ListNode(sum);
                 temp=result;
             }
