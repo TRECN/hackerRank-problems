@@ -123,7 +123,9 @@ public:
 
         }
         if(carry)
-            temp->next=new List
+            temp->next=new ListNode(carry);
+        
+        return result;
 
     }
 };
