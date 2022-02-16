@@ -108,9 +108,9 @@ public:
             else
                 carry=0;
 
-            if(head==NULL){
-                head= new ListNode(sum);
-                temp=head;
+            if(result==NULL){
+                result= new ListNode(sum);
+                temp=result;
             }
             else{
                 temp->next=new ListNode(sum);
