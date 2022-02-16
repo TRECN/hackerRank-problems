@@ -102,8 +102,10 @@ public:
             sum+=carry;
             if(sum>10){
                 sum=sum%10;
-                carr
+                carry=1;
             }
+            else
+                carry=0;
         }
 
     }
