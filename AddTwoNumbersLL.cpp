@@ -91,7 +91,8 @@ public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode* a=l1;
         ListNode* b=l2;
-        ListNode* result;
+        ListNode* result=NULL;
+        ListNode* temp=result;
         int carry=0,sum=0;
         while(a!=NULL||b!=NULL){
             if(a!=NULL)
@@ -106,7 +107,23 @@ public:
             }
             else
                 carry=0;
+
+            if(head==NULL){
+                head= new ListNode(sum);
+                temp=head;
+            }
+            else{
+                temp->next=new ListNode(sum);
+                temp=temp->next;
+            }
+            if(a)
+                a=a->next;
+            if(b)
+                b=b->next;
+
         }
+        if(carry)
+            temp->next=new List
 
     }
 };
