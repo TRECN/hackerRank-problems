@@ -83,6 +83,13 @@
 // Contest CalendarBlogScoringEnvironmentFAQAbout UsSupportCareersTerms Of Service
 
 
+#include <bits/stdc++.h>
+
+using namespace std;
+
+string ltrim(const string &);
+string rtrim(const string &);
+vector<string> split(const string &);
 
 /*
  * Complete the 'diagonalDifference' function below.
