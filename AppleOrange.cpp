@@ -47,30 +47,7 @@ int main()
 
     int t = stoi(first_multiple_input[1]);
 
-    string second_multiple_input_temp;
-    getline(cin, second_multiple_input_temp);
-
-    vector<string> second_multiple_input = split(rtrim(second_multiple_input_temp));
-
-    int a = stoi(second_multiple_input[0]);
-
-    int b = stoi(second_multiple_input[1]);
-
-    string third_multiple_input_temp;
-    getline(cin, third_multiple_input_temp);
-
-    vector<string> third_multiple_input = split(rtrim(third_multiple_input_temp));
-
-    int m = stoi(third_multiple_input[0]);
-
-    int n = stoi(third_multiple_input[1]);
-
-    string apples_temp_temp;
-    getline(cin, apples_temp_temp);
-
-    vector<string> apples_temp = split(rtrim(apples_temp_temp));
-
-    vector<int> apples(m);
+    snt> apples(m);
 
     for (int i = 0; i < m; i++) {
         int apples_item = stoi(apples_temp[i]);
