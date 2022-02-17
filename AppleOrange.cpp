@@ -13,7 +13,30 @@ vector<string> split(const string &);
  *  1. INTEGER s
  *  2. INTEGER t
  *  3. INTEGER a
+ *  4. INTEGER b
+ *  5. INTEGER_ARRAY apples
+ *  6. INTEGER_ARRAY oranges
+ */
 
+void countApplesAndOranges(int s, int t, int a, int b, vector<int> apples, vector<int> oranges) {
+    int AppleC=0,OrangeC=0;
+    for(int i=0;i<apples.size();i++){
+        apples[i]+=a;
+        if(apples[i]>=s&&apples[i]<=t)
+            AppleC++;
+
+    }
+    for(int i=0;i<oranges.size();i++){
+        oranges[i]+=b;
+        if(oranges[i]>=s&&oranges[i]<=t)
+            OrangeC++;
+    }
+    cout<<AppleC<<endl;
+    cout<<OrangeC<<endl;
+    
+}
+
+int main()
 {
     string first_multiple_input_temp;
     getline(cin, first_multiple_input_temp);
