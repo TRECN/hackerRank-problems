@@ -7,7 +7,7 @@ public:
                 mat1.push_back(mat[i][j]);
             }
         }
-        vector<vector<int>>result;
+        vector<vector<int>>result(r,vector<int>(c));
 
         for (int i=0,k=0;i<r;i++){
             for(int j=0;j<c;j++){
