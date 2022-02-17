@@ -68,22 +68,6 @@ int main()
     string apples_temp_temp;
     getline(cin, apples_temp_temp);
 
-    vector<string> apples_temp = split(rtrim(apples_temp_temp));
-
-    vector<int> apples(m);
-
-    for (int i = 0; i < m; i++) {
-        int apples_item = stoi(apples_temp[i]);
-
-        apples[i] = apples_item;
-    }
-
-    string oranges_temp_temp;
-    getline(cin, oranges_temp_temp);
-
-    vector<string> oranges_temp = split(rtrim(oranges_temp_temp));
-
-    vector<int> oranges(n);
 
     for (int i = 0; i < n; i++) {
         int oranges_item = stoi(oranges_temp[i]);
