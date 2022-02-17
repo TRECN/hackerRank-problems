@@ -122,7 +122,20 @@ int main()
 
     vector<vector<int>> arr(n);
 
+    for (int i = 0; i < n; i++) {
+        arr[i].resize(n);
 
+        string arr_row_temp_temp;
+        getline(cin, arr_row_temp_temp);
+
+        vector<string> arr_row_temp = split(rtrim(arr_row_temp_temp));
+
+        for (int j = 0; j < n; j++) {
+            int arr_row_item = stoi(arr_row_temp[j]);
+
+            arr[i][j] = arr_row_item;
+        }
+    }
 
     int result = diagonalDifference(arr);
 
