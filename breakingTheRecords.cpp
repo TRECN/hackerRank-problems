@@ -5,14 +5,7 @@ vector<int> breakingRecords(vector<int> scores) {
     int minC=0;
 
     for(int i=0;i<scores.size();i++){
-        if(max<scores[i]){
-            maxC++;
-            max=scores[i];
-        }
-        if(min>scores[i]){
-            minC++;
-            min=scores[i];
-        }
+        i
     }
     vector <int> result;
     result.push_back(maxC);
