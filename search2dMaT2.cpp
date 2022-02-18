@@ -5,17 +5,10 @@ public:
         vector<int>Mtar;
         
         for(int i=0;i<matrix.size();i++){
-            if(target>matrix[i][matrix[0].size()-1]){
-                continue;
-            }
-            else{
-                Mtar=matrix[i];
-                break;
-            }
-        }
-        int l=0;
-        int r=Mtar.size()-1;
-        while(l<=r){
+            Mtar=matrix[i];
+            int l=0;
+            int r=Mtar.size()-1;
+                while(l<=r){
             int m=l+(r-l)/2;
 
             if(Mtar[m]==target)
@@ -26,6 +19,8 @@ public:
             else    
                 r=m-1;
         }
+        }
         return false;
+        
     }
 };
