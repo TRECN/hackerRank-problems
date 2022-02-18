@@ -14,7 +14,7 @@ vector<int> breakingRecords(vector<int> scores) {
             min=scores[i];
         }
     }
-    vactor <int> result;
+    vector <int> result;
     result.push_back(maxC);
     result.push_back(minC);
     return result;
