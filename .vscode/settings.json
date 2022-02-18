@@ -2,6 +2,8 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "files.associations": {
         "css201-doc": "raw",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "bitset": "cpp",
+        "xutility": "cpp"
     }
 }
