@@ -1,6 +1,13 @@
 int getTotalX(vector<int> a, vector<int> b) {
     int n=a[a.size()-1];
-
+    int m=b[b.size()-1];
+    
+    vector<int>result;
+    for(int i=n;i<=m;i++){
+        int count=0;
+        for(int j=0;j<a.size();j++){
+            if(i%a[j]==0){
+                count++;
             }
         }
         if(count==a.size()){
