@@ -10,6 +10,7 @@ public:
             }
             if(count==1)
                 return i;
+            count =0;
         }
         return -1;    
     }
