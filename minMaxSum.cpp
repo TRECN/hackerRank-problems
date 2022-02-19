@@ -42,24 +42,6 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-void miniMaxSum(vector<int> arr) {
-    long long int min=10000000001,max=0,sum=0;
-    for(int i=0;i<arr.size();i++){
-        for(int j=0;j<arr.size();j++){
-            if(j!=i){
-                sum+=arr[j];
-            }
-        }
-        if(max<sum){
-            max=sum;
-        }
-        if(min>sum){
-            min=sum;
-        }
-        sum=0;
-    }
-    cout<<min<<" "<<max;
-}
 
 int main()
 {
