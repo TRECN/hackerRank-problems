@@ -16,29 +16,32 @@ public:
                 ans+=4;
                 --i;
             }
-            if(s[i]=='X' && i>0 && s[i-1]=='I'){
+            else if(s[i]=='X' && i>0 && s[i-1]=='I'){
                 ans+=9;
                 --i;
             }
-            if(s[i]=='L' && i>0 && s[i-1]=='X'){
+            else if(s[i]=='L' && i>0 && s[i-1]=='X'){
                 ans+=40;
                 --i;
             }
             
-            if(s[i]=='C' && i>0 && s[i-1]=='X'){
+            else if(s[i]=='C' && i>0 && s[i-1]=='X'){
                 ans+=90;
                 --i;
             }
             
-            if(s[i]=='D' && i>0 && s[i-1]=='C'){
+            else if(s[i]=='D' && i>0 && s[i-1]=='C'){
                 ans+=400;
                 --i;
             }
             
-            if(s[i]=='M' && i>0 && s[i-1]=='C'){
+            else if(s[i]=='M' && i>0 && s[i-1]=='C'){
                 ans+=900;
                 --i;
             }
+            else    
+                ans+=rom[s[i]];
         }
+        return ans;
     }
 };
