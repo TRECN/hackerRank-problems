@@ -1,19 +1,21 @@
 class Solution {
 public:
     bool canConstruct(string ransomNote, string magazine) {
-        int r=ransomNote.length();
-        int m=magazine.length();
-        if(r<m){
-            for(int i=0;i<m&&(i+r)<=m;i++){
-                if(ransomNote==magazine.substr(i,r)){
-                    return true;
-                }
-            }
+        nap<char,int>ranMap;
+        map<char, int>magMap;
+        for(auto ch:ransomNote)
+            ranMap[ch]++;
+            
+        for(auto ch:magazine)
+            magMap[ch]++;
 
-        }
-        else if(r==m&&ransomNote==magazine){
-            return true;
-        }
-        return false;
+        for(auto ch:ransomNote)
+           {
+               if(ranMap[ch]>magMap[ch])
+                return false;
+           }
+           return true;
+            
+        
     }
 };
