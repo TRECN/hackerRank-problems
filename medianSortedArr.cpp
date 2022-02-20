@@ -11,15 +11,17 @@ public:
         sort(a.begin(),a.end());
         int n=a.size();
         int median=0;
-        if(n%2==0){
+        double result;
+        if(n%2!=0){
             median=((n+1)/2)-1;
-            return a[median];
+            result=a[median];
         }
         else{
-            median=(n/2)-1;
-            double b=(a[median]+a[median+1])/2.0;
-            return b;
+            median=(n/2);
+            
+            result =(a[median]+a[median+1])/2.0;
         }
+        return result;
 
     }
 };
