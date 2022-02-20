@@ -18,7 +18,7 @@ public:
                 head=head->next;
                 temp=head;
             }
-            if(temp->val!=val){
+            else if(temp->val!=val){
                 temp1=temp;
                 temp=temp->next;
                 continue;
