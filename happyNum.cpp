@@ -12,8 +12,6 @@ public:
                     return false;       
                 if(s==1&&a==0)
                     return true;
-                if(s==a)
-                    return false;
                 if(a==0){
                     a=s;
                     s=0;
