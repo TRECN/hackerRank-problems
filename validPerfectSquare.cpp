@@ -1,6 +1,6 @@
 class Solution {
 public:
-    bool isPerfectSquare(int num) {
+    bool isPerfectSquare(int x) {
         long l=1;
         long r=x;
         long m;
