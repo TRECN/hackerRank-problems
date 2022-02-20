@@ -46,32 +46,7 @@ void miniMaxSum(vector<int> arr) {
     long long int min=10000000001,max=0,sum=0;
     for(int i=0;i<arr.size();i++){
         for(int j=0;j<arr.size();j++){
-            if(j!=i){
-                sum+=arr[j];
-            }
-        }
-        if(max<sum){
-            max=sum;
-        }
-        if(min>sum){
-            min=sum;
-        }
-        sum=0;
-    }
-    cout<<min<<" "<<max;
-}
-
-int main()
-{
-
-    string arr_temp_temp;
-    getline(cin, arr_temp_temp);
-
-    vector<string> arr_temp = split(rtrim(arr_temp_temp));
-
-    vector<int> arr(5);
-
-    for (int i = 0; i < 5; i++) {
+5; i++) {
         int arr_item = stoi(arr_temp[i]);
 
         arr[i] = arr_item;
