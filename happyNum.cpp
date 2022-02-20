@@ -11,7 +11,7 @@ public:
                     return false;       
                 }
                 if(s==1)
-                    return true
+                    return true;
                 if(a==0){
                     a=s;
                     s=0;
