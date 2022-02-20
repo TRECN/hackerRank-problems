@@ -17,6 +17,7 @@ public:
             if(head->val==val){
                 head=head->next;
                 temp=head;
+                continue;
             }
             else if(temp->val!=val){
                 temp1=temp;
@@ -24,6 +25,7 @@ public:
                 continue;
             }
             temp1->next=temp->next;
+            temp=temp->next;
         }
         return head;
     }
