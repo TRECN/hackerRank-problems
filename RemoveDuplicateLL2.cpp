@@ -12,50 +12,24 @@ class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {
         ListNode* a=head;
-        ListNode* temp=new ListNode(0,a);
-        ListNode* pre=temp;
-        while(a!=NULL){
+        ListNode* temp=new ListNode(INT_MIN);
+        ListNode* result=temp;
+        temp->next=a;
+        while(a!=NULL && a->next!=NULL){
             if(a->next!=NULL&&a->val==a->next->val){
-                while(a->next!=NULL&&a->val==a->next->val)
+                int b=a->val;
+                while(a&&a->val==b)
                     a=a->next;
-                pre->next=a->next;
             }
             else{
-                pre=pre->next;
+                temp->next=a;
+                a=a->next;
+                temp=temp->next;
             }
             
-            a=a->next;
+            
         }
-        return temp->next;
+        temp->next=a;
+        return result->next;
     }
 };
-class Solution {
-    public ListNode deleteDuplicates(ListNode head) {
-        // sentinel
-        ListNode sentinel = new ListNode(0, head);
-
-        // predecessor = the last node 
-        // before the sublist of duplicates
-        ListNode pred = sentinel;
-        
-        while (head != null) {
-            // if it's a beginning of duplicates sublist 
-            // skip all duplicates
-            if (head.next != null && head.val == head.next.val) {
-                // move till the end of duplicates sublist
-                while (head.next != null && head.val == head.next.val) {
-                    head = head.next;    
-                }
-                // skip all duplicates
-                pred.next = head.next;     
-            // otherwise, move predecessor
-            } else {
-                pred = pred.next;    
-            }
-                
-            // move forward
-            head = head.next;    
-        }  
-        return sentinel.next;
-    }
-}
