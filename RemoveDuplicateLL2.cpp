@@ -18,6 +18,7 @@ public:
             if(a->val==a->next->val &&a->next!=NULL){
                 while(a->val==a->next->val&&a->next!=NULL)
                     a=a->next;
+                pre->next=a->next;
             }
             else{
                 pre=pre->next;
