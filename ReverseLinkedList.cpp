@@ -21,7 +21,7 @@ public:
             a=c;
         }
         head=b;
-
+        return head;
     }
-    return head;
+    
 };
