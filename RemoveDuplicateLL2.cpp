@@ -15,8 +15,8 @@ public:
         ListNode* temp=new ListNode(0,a);
         ListNode* pre=temp;
         while(a!=NULL){
-            if(a->val==a->next->val &&a->next!=NULL){
-                while(a->val==a->next->val&&a->next!=NULL)
+            if(a->next!=NULL&&a->val==a->next->val){
+                while(a->next!=NULL&&a->val==a->next->val)
                     a=a->next;
                 pre->next=a->next;
             }
