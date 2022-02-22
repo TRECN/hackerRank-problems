@@ -1,10 +1,10 @@
 class Solution {
 public:
     int reverse(int x) {
-        long result=0;
+        int result=0;
         int y=abs(x);
         while(y>0){
-            if(result<INT_MIN||result>INT_MAX)
+            if(result<INT_MIN/10||result>INT_MAX10)
                 return 0;
             int r=y%10;
             result=result*10+r;
@@ -13,6 +13,6 @@ public:
         if(x>=0)
         return result;
         else
-        return (-result)
+        return (-result);
     }
 };
