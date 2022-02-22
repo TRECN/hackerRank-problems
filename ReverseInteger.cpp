@@ -10,7 +10,7 @@ public:
             result=result*10+r;
             y/=10;
         }
-        if(x>0)
+        if(x>=0)
         return result;
         else
         return (-result)
