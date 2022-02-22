@@ -3,7 +3,7 @@ public:
     string defangIPaddr(string address) {
         string a="";
         for(auto i:address){
-            if(i==".")
+            if(i=='.')
                 a+="[.]";
             else    
                 a+=i;
