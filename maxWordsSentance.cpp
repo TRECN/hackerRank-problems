@@ -5,7 +5,7 @@ public:
         for(auto i:sentences){
             int count=0;
             for(int j=0;j<i.length();j++){
-                char ch[a]=i[j];
+                char ch=i[j];
                 if(ch==' '){
                     count++;
                 }
