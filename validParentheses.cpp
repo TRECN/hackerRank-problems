@@ -8,7 +8,7 @@ public:
             else{
                 if(st.empty())
                     return false;
-                if((st.top()=="("&&i==')')||(st.top()=="{"&&i=='}')||(st.top()=="["&&i==']'))
+                if((st.top()=='('&&i==')')||(st.top()=='{'&&i=='}')||(st.top()=='['&&i==']'))
                     st.pop();
                 else
                     return false;
