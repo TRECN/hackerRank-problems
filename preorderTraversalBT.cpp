@@ -23,5 +23,4 @@ public:
         preorder(root);
         return a;
     }
-    
 };
