@@ -7,10 +7,10 @@ public:
         for(int i=0;i<n;i++){
             x.push_back(nums[i]);
         }
-        for(int i=n;i<2n;i++){
+        for(int i=n;i<2*n;i++){
             y.push_back(nums[i]);
         }
-        for(int i=0,j=0,k=0;i<2n;i++){
+        for(int i=0,j=0,k=0;i<2*n;i++){
             if(i%2==0){
                 result.push_back(y[j]);
                 j++;
