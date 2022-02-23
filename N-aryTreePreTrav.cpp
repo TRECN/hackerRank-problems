@@ -29,6 +29,7 @@ public:
             pre(i);
     }
     vector<int> preorder(Node* root) {
-        
+        pre(root);
+        return a;
     }
 };
