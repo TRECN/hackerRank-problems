@@ -20,6 +20,7 @@ public:
             preorderTraversal(root->right);
     }
     vector<int> preorderTraversal(TreeNode* root) {
+        preorder(root);
         return a;
     }
     
