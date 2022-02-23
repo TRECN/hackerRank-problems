@@ -12,11 +12,11 @@ public:
         }
         for(int i=0,j=0,k=0;i<2*n;i++){
             if(i%2==0){
-                result.push_back(y[j]);
+                result.push_back(x[j]);
                 j++;
             }
             else{
-                result.push_back(x[k]);
+                result.push_back(y[k]);
                 k++;
             }
         }
