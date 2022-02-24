@@ -16,7 +16,7 @@ public:
         if(root==NULL)
             return;
         if(lev==result.size())result.push_back({});
-        result[lev].push_back(node->val);
+        result[lev].push_back(root->val);
         level(root->left,lev+1);
         level(root->right,lev+1);
 
