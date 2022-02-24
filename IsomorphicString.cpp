@@ -10,10 +10,16 @@ public:
         unordered_map<char,int>m1;
         
         for(long i=0;i<s.length();i++){
-            m1[st[i]]++;
+            m1[t[i]]++;
         }
-        if(s.length()==t.length()){
-            
-        } 
+        if(s.length()!=t.length()){
+            return false;
+        }
+        for(int j=0;j<s.length()){
+            if(m[s[j]]!=m1[t[j]]){
+                return false;
+            }
+        }
+        return true; 
     }
 };
