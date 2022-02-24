@@ -15,7 +15,7 @@ public:
         if(s.length()!=t.length()){
             return false;
         }
-        for(int j=0;j<s.length()){
+        for(int j=0;j<s.length();j++){
             if(m[s[j]]!=m1[t[j]]){
                 return false;
             }
