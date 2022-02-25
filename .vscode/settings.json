@@ -4,6 +4,7 @@
         "css201-doc": "raw",
         "xstring": "cpp",
         "bitset": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "initializer_list": "cpp"
     }
 }
