@@ -13,16 +13,7 @@ class Solution {
 public:
     void findPathSum(TreeNode* node, int targetSum, bool &hasPath)
     {
-        if(node == NULL) return;
-    
-        findPathSum(node->left, targetSum - node->val, hasPath);
-        findPathSum(node->right, targetSum - node->val, hasPath);
-        
-        if(node->left == NULL && node->right == NULL && targetSum - node->val == 0)
-        {
-            hasPath = true;
-        }
-    }
+
     
     bool hasPathSum(TreeNode* root, int targetSum) {
         bool hasPath = false;
