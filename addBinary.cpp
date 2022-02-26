@@ -10,17 +10,4 @@ public:
             if(i!=-1)
                 first =int(a[i--]-48);
             else 
-                first =0;
-            
-            if(j!=-1)
-                second = int(b[j--]-48);
-            else
-                second =0;
-            
-            sum = first + second +carry;
-            s.insert(0,to_string(sum%2));
-            carry=sum/2;
-        }
-        return s;
-    }
-};
+     
