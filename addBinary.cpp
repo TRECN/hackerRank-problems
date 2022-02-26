@@ -20,7 +20,7 @@ public:
             sum = first + second +carry;
             s.insert(0,to_string(sum%2));
             carry=sum/2;
-
+            
         }
         return s;
     }
