@@ -6,7 +6,7 @@ public:
         n=stoi(num1);
         n1=stoi(num2);
         n=n+n1;
-        string n2=(string)n;
+        string n2=to_string(n);
         return n2;
 
 
