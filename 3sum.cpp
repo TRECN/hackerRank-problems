@@ -4,8 +4,8 @@ public:
         vector<vector<int>>result;
         vector<int>temp;
         for(int i=0;i<nums.size();i++){
-            for(int j=0;j<nums.size();j++){
-                for(int k=0;k<nums.size();k++){
+            for(int j=i+1;j<nums.size();j++){
+                for(int k=j+1;k<nums.size();k++){
                     if(i!=j&&i!=k&&j!=k){
                         if(nums[i]+nums[j]+nums[k]){
                             continue;
