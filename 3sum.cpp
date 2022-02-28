@@ -15,6 +15,7 @@ public:
                             temp.push_back(nums[j]);
                             temp.push_back(nums[k]);
                         }
+                        result.push_back(temp);
                     }
                 }
             }
