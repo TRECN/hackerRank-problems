@@ -21,7 +21,17 @@ public:
         return -1;
         
     }
-
+    
+    void remove(int key) {
+        auto& bucket = map_[get_hash(key)];
+        for (auto it = bucket.begin(); it != bucket.end(); ++it) {
+            if (it->first == key) {
+                bucket.erase(it);
+                return;
+            }
+        }
+        
+    }
     
     int get_hash(int key) {
         return static_cast<int>( static_cast<size_t>(key) * HASH_CODE % BUCKET_SIZE );
