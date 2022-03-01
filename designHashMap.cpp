@@ -33,10 +33,7 @@ public:
         
     }
     
-    int get_hash(int key) {
-        return static_cast<int>( static_cast<size_t>(key) * HASH_CODE % BUCKET_SIZE );
-    }
-    
+
 private:
     vector<vector<pair<int,int>>> map_;
     static const int HASH_CODE = 9001; 
