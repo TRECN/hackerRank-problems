@@ -37,11 +37,6 @@ public:
         return static_cast<int>( static_cast<size_t>(key) * HASH_CODE % BUCKET_SIZE );
     }
     
-private:
-    vector<vector<pair<int,int>>> map_;
-    static const int HASH_CODE = 9001; 
-    static const size_t BUCKET_SIZE = 42; 
-};
 
 /**
  * Your MyHashMap object will be instantiated and called as such:
