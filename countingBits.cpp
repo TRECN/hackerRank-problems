@@ -9,7 +9,8 @@ class Solution{
                     s+=a%2;
                     a/=2;
                 }
-                a
+                result.push_back(s);
             }
+            return result;
         }
 };
