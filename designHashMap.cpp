@@ -2,17 +2,7 @@ class MyHashMap {
 public:
     MyHashMap() : map_(BUCKET_SIZE) {}
     
-    void put(int key, int value) {
-        auto& bucket = map_[get_hash(key)];
-        for (auto& [key_, val_] : bucket) {
-            if (key_ == key) {
-                val_ = value;
-                return;
-            };
-        }
-        bucket.emplace_back(key, value);
-    }
-    
+
     int get(int key) {
         auto& bucket = map_[get_hash(key)];
         for (auto& [key_, val_] : bucket) {
