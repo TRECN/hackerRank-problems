@@ -13,7 +13,15 @@ public:
         bucket.emplace_back(key, value);
     }
     
-
+    int get(int key) {
+        auto& bucket = map_[get_hash(key)];
+        for (auto& [key_, val_] : bucket) {
+            if (key_ == key) return val_;
+        }
+        return -1;
+        
+    }
+    
     void remove(int key) {
         auto& bucket = map_[get_hash(key)];
         for (auto it = bucket.begin(); it != bucket.end(); ++it) {
