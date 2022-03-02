@@ -11,14 +11,16 @@ public:
             }
         }
         int min=INT_MIN;
-        if(s1.size()==s.size){
+        if(s1.size()==s.size()){
             for(auto i:s1){
-            if(min<i)
-                min=i;
-            else
-                return false;
+                if(min<i)
+                    min=i;
+                else
+                    return false;
+            }
+            return true;
         }
-        }
-        return true;
+        return false;
+        
     }
 };
