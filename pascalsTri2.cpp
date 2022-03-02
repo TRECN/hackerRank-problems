@@ -1,13 +1,14 @@
 class Solution {
 public:
-    vector<vector<int>> generate(int rowIndex) {
-        vector<vector<int>>result(rowIndex);
+    vector<int> getRow(int rowIndex) {
+        int row=rowIndex+1;
+        vector<vector<int>>result(row);
         result[0].push_back(1);
-        if(rowIndex!=1){
+        if(row!=1){
             result[1].push_back(1);
             result[1].push_back(1);
             vector<int>prv=result[1];
-            for(int i=0;i<rowIndex-2;i++){
+            for(int i=0;i<row-2;i++){
                 vector<int>edg;
                 edg.push_back(1);
                 for(int j=0;j<prv.size()-1;j++)
@@ -17,6 +18,6 @@ public:
                 prv=edg;
             }
         }
-        return result[rowIndex-1];
+        return result[row-1];
     }
 };
