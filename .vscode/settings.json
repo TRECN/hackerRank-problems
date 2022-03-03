@@ -5,6 +5,7 @@
         "xstring": "cpp",
         "bitset": "cpp",
         "xutility": "cpp",
-        "initializer_list": "cpp"
+        "initializer_list": "cpp",
+        "type_traits": "cpp"
     }
 }
