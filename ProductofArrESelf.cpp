@@ -4,7 +4,7 @@ public:
         int n=nums.size();
         vector<int>result;
         long long int p=1;
-        int zero;
+        int zero=0;
         for(auto i:nums){
             if(i!=0)
                 p*=i;
