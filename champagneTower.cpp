@@ -5,7 +5,6 @@ double champagneTower(int poured, int query_row, int query_glass) {
         result[0][0] = poured;
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j <= i; j++) {
-                // If the glass >=1
                 if (result[i][j] >= 1) {
                     // split  (result[i][j] - 1) into next level
                     result[i + 1][j]     += (result[i][j] - 1) / 2.0;
