@@ -9,7 +9,9 @@ public:
             else if(nums[i]>a and nums[i]<b)b=nums[i];
             if(nums[i]>a and nums[i]>b){
                 ans = true;
+                break;
             }
         }
+        return ans;
     }
 };
