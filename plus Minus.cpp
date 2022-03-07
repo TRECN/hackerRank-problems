@@ -50,24 +50,7 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-void plusMinus(vector<int> arr) {
-    int n=arr.size();
-    int countp=0,countn=0,count0=0;
-    for(int i=0;i<n;i++){
-        if(arr[i]>0)
-            countp++;
-        else if(arr[i]<0)
-            countn++;
-        else
-            count0++;
-    }
-    double p=(double)countp/n,ne=(double)countn/n,ze=(double)count0/n;
-    cout<<p<<endl;
-    cout<<ne<<endl;
-    cout<<ze;
 
-
-}
 
 int main()
 {
