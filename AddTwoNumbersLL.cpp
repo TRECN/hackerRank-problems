@@ -101,11 +101,6 @@ public:
             if(b!=NULL)
                 sum+=b->val;
 
-            sum+=carry;
-            if(sum>=10){
-                sum=sum%10;
-                carry=1;
-            }
             else
                 carry=0;
 
