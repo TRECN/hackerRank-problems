@@ -4,7 +4,7 @@ public:
     string longestPalindrome(string s) {
         
         int max = 0;
-        int ans = 1;
+        int result = 1;
         
         for(int i=1; i<s.length(); i++){
             
@@ -13,8 +13,8 @@ public:
                        
             while(l>=0 && r<s.length() && s[l] == s[r]){
                 
-                if((r-l+1) > ans){
-                    ans = r-l+1;
+                if((r-l+1) > result){
+                    result = r-l+1;
                     max = l;
                 }
                 l--;
@@ -26,14 +26,14 @@ public:
             
             while(l>=0 && r<s.length() && s[l] == s[r]){
                 
-                if((r-l+1) > ans){
-                    ans = r-l+1;
+                if((r-l+1) > result){
+                    result = r-l+1;
                     max = l;
                 }
                 l--;
                 r++;
             }
         }
-        return s.substr(max, ans);
+        return s.substr(max, result);
     }
 };
