@@ -22,7 +22,7 @@ public:
         }
         for(auto a:m){
             if(a.second>1){
-                result.push_back(a.fist);
+                result.push_back(a.first);
             }
         }
         return result;
