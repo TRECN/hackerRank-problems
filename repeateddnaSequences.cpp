@@ -10,7 +10,12 @@ public:
         unordered_map<string,int>m;
         while(j<l){
             t=t+s[j];
-            
+            if(j-i+1<k){
+                j++;
+            }
+            else if(j-i+1==k){
+                
+            }
         }
 
     }
