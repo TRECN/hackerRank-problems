@@ -14,9 +14,18 @@ public:
                 j++;
             }
             else if(j-i+1==k){
-                
+                m[t]++;
+                t=t.substr(1);
+                i++;
+                j++;
             }
         }
+        for(auto a:m){
+            if(a.second>1){
+                result.push_back(a.fist);
+            }
+        }
+        return result;
 
     }
 };
