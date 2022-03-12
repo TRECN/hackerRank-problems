@@ -14,7 +14,7 @@ public:
         ListNode* temp=head;
         vector<int>a;
         while(temp){
-            a.push_back(temp.val);
+            a.push_back(temp->val);
             temp=temp->next;
         }
         int n=a.size()-(a.size()%k);
@@ -29,15 +29,16 @@ public:
 
         ListNode* result=NULL;
         for(int j=0;j<a.size();j++){
-            if(result=NULL){
-                result=a[j];
+            ListNode* x=new ListNode(a[j]);
+            if(result==NULL){
+                result=x;
                 continue;
             }
            ListNode* temp1=result;
            while(temp1->next!=NULL){
-               temp=temp->next;
+               temp1=temp1->next;
            }
-           temp->next=a[j];
+           temp1->next=x;
         }
         return result;
     }
