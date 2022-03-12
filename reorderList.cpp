@@ -19,30 +19,27 @@ public:
         }
         int n=a.size()-1;
         int i=0;
-        int j=n-i;
+        int n1=n-i;
         vector<int>b;
-        for(int k=0;k<n+1;k++){
+        for(int k=0;k<a.size();k++){
             if(k%2==0){
                 b.push_back(a[i]);
                 i++;
             }
             else{
-                b.push_back(a[j]);
-                j=n-i;
+                b.push_back(a[n1]);
+                n1=n-i;
             }
         }
-        head=NULL;
-        for(int j=0;j<a.size();j++){
-            ListNode* x=new ListNode(a[j]);
-            if(head==NULL){
-                head=x;
-                continue;
-            }
+        head->val=b[0];
+        head->next=NULL;
+        for(int j=1;j<b.size();j++){
+            ListNode* c=new ListNode(b[j]);
            ListNode* temp1=head;
            while(temp1->next!=NULL){
                temp1=temp1->next;
            }
-           temp1->next=x;
+           temp1->next=c;
         }
     }
 };
