@@ -8,14 +8,7 @@ public:
             i++;
         }
         i = 0;
-        priority_queue< pair<int,string>, vector< pair<int,string> >, greater< pair<int,string> > > pq;
-        for(auto it: list2){
-            if(m.count(it)){
-                m[it] += i;
-                pq.push({m[it], it});
-            }
-            i++;
-        }
+
         vector<string> ans;
         if(pq.empty()){
             return ans;
