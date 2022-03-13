@@ -1,15 +1,4 @@
-class MyQueue {
-public:
-    stack<int>input;
-    stack<int>output;
-    MyQueue() {
-        
-    }
-    
-    void push(int x) {
-        input.push(x);
-    }
-    
+
     int pop() {
         if(input.size() == 0 && output.size() == 0)
         {
