@@ -4,7 +4,6 @@
 class Solution {
 public:
     int firstBadVersion(int n) {
-        int n=nums.size();
             int l=0;
             int r=n-1;
             while(l<=r){
