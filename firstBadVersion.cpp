@@ -4,10 +4,10 @@
 class Solution {
 public:
     int firstBadVersion(int n) {
-            int l=0;
-            int r=n-1;
+            unsigned int l=0;
+            unsigned int r=n;
             while(l<=r){
-                int m=(l+r)/2;
+                unsigned int m=(l+r)/2;
                 if(!isBadVersion(m))
                     l=m+1;
                 else
