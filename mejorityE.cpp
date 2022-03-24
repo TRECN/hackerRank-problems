@@ -7,7 +7,6 @@ public:
                 m=a;
             if(m==a)
                 count++;
-            else
                 count--;
         }
         return m;
