@@ -10,7 +10,7 @@
  */
 class Solution {
 public:
-    ListNode* swapNodes(ListNode* head, int pos) {
+    ListNode* swapNodes(ListNode* head, int k) {
         ListNode *pt1=head,*pt2=head,*pos=NULL;
         while(--pos)
             pt1=pt1->next;
