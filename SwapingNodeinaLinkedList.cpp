@@ -10,18 +10,18 @@
  */
 class Solution {
 public:
-    ListNode* swapNodes(ListNode* head, int k) {
-        ListNode *pt1=head,*pt2=head,*k=NULL;
-        while(--k)
+    ListNode* swapNodes(ListNode* head, int pos) {
+        ListNode *pt1=head,*pt2=head,*pos=NULL;
+        while(--pos)
             pt1=pt1->next;
 
-        k=pt1;
+        pos=pt1;
         pt1=pt1->next;
         while(pt1){
             pt1=pt1->next;
             pt2=pt2->next;
         }
-        swap(ptr2->val,k->val);
+        swap(ptr2->val,pos->val);
         return head;
     }
 };
