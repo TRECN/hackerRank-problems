@@ -12,7 +12,7 @@ class Solution {
 public:
     ListNode* swapNodes(ListNode* head, int k) {
         ListNode *pt1=head,*pt2=head,*pos=NULL;
-        while(--pos)
+        while(--k)
             pt1=pt1->next;
 
         pos=pt1;
@@ -21,7 +21,7 @@ public:
             pt1=pt1->next;
             pt2=pt2->next;
         }
-        swap(ptr2->val,pos->val);
+        swap(pt2->val,pos->val);
         return head;
     }
 };
