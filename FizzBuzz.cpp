@@ -12,7 +12,7 @@ public:
                 result.push_back("Buzz");
             else
                 {
-                    string s=""+k;
+                    string s=to_string(k);
                     result.push_back(s);
                 }
         }
