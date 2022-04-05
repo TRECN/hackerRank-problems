@@ -15,8 +15,6 @@ public:
                     string s=""+k;
                     result.push_back(s);
                 }
-            
-                
         }
     }
 };
