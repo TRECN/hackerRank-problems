@@ -1,26 +1,26 @@
 class Solution {
 public:
     int calPoints(vector<string>& ops) {
-        stack<int>a;
+        stack<int>a1;
         for(auto a:ops){
             if(a=="C")
-                a.pop;
+                a1.pop();
             else if(a=="D")
-                a.push(a.top*2);
+                a1.push(a.top*2);
             else if(a=="+"){
-                int t=a.top();
-                a.pop();
-                t=t+a.top();
-                a.push(t-a.top());
-                a.push(t);
+                int t=a1.top();
+                a1.pop();
+                t=t+a1.top();
+                a1.push(t-a1.top());
+                a1.push(t);
             }
             else{
-                a.push(stoi(a));
+                a1.push(stoi(a));
             }
             
         }
         auto result;
-        for(auto i:a){
+        for(auto i:a1){
             result+=i;
         }
 
