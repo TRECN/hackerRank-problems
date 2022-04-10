@@ -6,7 +6,7 @@ public:
             if(a=="C")
                 a1.pop();
             else if(a=="D")
-                a1.push(a.top*2);
+                a1.push(a1.top()*2);
             else if(a=="+"){
                 int t=a1.top();
                 a1.pop();
@@ -19,11 +19,12 @@ public:
             }
             
         }
-        auto result;
-        for(auto i:a1){
-            result+=i;
+        int result;
+        for(a1.size()!=0){
+            result+=a1.top;
+            a1.pop;
         }
 
-        return i;
+        return result;
     }
 };
