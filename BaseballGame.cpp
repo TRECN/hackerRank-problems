@@ -19,7 +19,7 @@ public:
             }
             
         }
-        int result;
+        int result=0;
         while(a1.size()!=0){
             result+=a1.top();
             a1.pop();
