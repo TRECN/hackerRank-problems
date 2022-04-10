@@ -20,9 +20,9 @@ public:
             
         }
         int result;
-        for(a1.size()!=0){
-            result+=a1.top;
-            a1.pop;
+        while(a1.size()!=0){
+            result+=a1.top();
+            a1.pop();
         }
 
         return result;
